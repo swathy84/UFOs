@@ -1,7 +1,10 @@
 // import dependencies
 
-import the data from data.js
+//import the data from data.js
 const tableData = data;
+
+// Reference the HTML table using d3
+var tbody = d3.select("tbody");
 
 
 // function to build the table 
@@ -21,6 +24,7 @@ function buildTable(data) {
     Object.values(dataRow).forEach((val) => {
       let cell = row.append("td");
       cell.text(val);
+      
       }
     );
   });
@@ -43,12 +47,12 @@ function handleClick() {
     // @NOTE: If no date was entered, then filteredData will
     // just be the original tableData.
     buildTable(filteredData);
+}
 
 
     //.on("click",handleClick); is telling D3 to execute handleClick() funcntion when the button with id of filter-btn is clicked
     // Attach an even to listen for the form button
-    d3.selectAll("#filter-btn").on("click",handleClick);
+d3.selectAll("#filter-btn").on("click",handleClick);
 
     //Build the table when the page loads 
-    buildTable(tableData);
-  };
+buildTable(tableData);
