@@ -28,6 +28,7 @@ The table was created using JavaScript and HTM/CSS and Bootstrap were used to mo
 The files for the updated analysis : 
 
 [app.js](static/js/app.js)
+
 [index.html](index.html)
 
 
@@ -49,6 +50,8 @@ The display of the webpage after the filters bieng applied:
 ### Drawback
 
 The user must key in specific data related to the date,city,state,country,and shapes to the search to display the relevant data in the table. The filters are case senstive and  cannot include spaces. For example- It will not display the data if we type El cajon instead of el cajon. 
+
+![main](static/images/UFO_filter1.png)
 
 ![main](static/images/UFO_filter.png)
 
